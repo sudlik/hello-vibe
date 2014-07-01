@@ -5,10 +5,10 @@ Hello world example for vibe.d
 
 Requirements
 ------------
-* dub (http://code.dlang.org)
+* `dub` (http://code.dlang.org)
 
-Installation
+Usage
 ------------
-1. git clone git@github.com:sudlik/hello-vibe.git
-2. cd hello-vibe
-3. dub run
+1. `$ git clone git@github.com:sudlik/hello-vibe.git`
+2. `$ cd hello-vibe`
+3. `dub run`
