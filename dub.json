@@ -1,8 +1,8 @@
 {
 	"name": "hello-vibe",
 	"description": "A simple vibe.d server application.",
-	"copyright": "Copyright © 2014, marek",
-	"authors": ["marek"],
+	"copyright": "Copyright © 2014, sudlik",
+	"authors": ["sudlik"],
 	"dependencies": {
 		"vibe-d": ">=0.7.17"
 	},
