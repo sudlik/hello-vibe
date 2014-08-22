@@ -1,20 +1,18 @@
 import vibe.d;
+import vibe.http.router : URLRouter;
+import vibe.http.server : listenHTTP, HTTPServerOption, HTTPServerSettings;
+import controller : Controller;
 
 shared static this()
 {
-	auto settings = new HTTPServerSettings;
-    
+    auto settings = new HTTPServerSettings;
+    auto router = new URLRouter;
+
+    router.registerWebInterface(new Controller);
+
     settings.options |= HTTPServerOption.distribute;
 	settings.port = 8080;
 	settings.bindAddresses = ["::1", "127.0.0.1"];
 
-    enableWorkerThreads();
-	listenHTTP(settings, &hello);
-
-	logInfo("Please open http://127.0.0.1:8080/ in your browser.");
-}
-
-void hello(HTTPServerRequest req, HTTPServerResponse res)
-{
-	res.writeBody("Hello, World!");
+	listenHTTP(settings, router);
 }
