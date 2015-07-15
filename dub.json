@@ -1,10 +1,11 @@
 {
 	"name": "hello-vibe",
-	"description": "A simple vibe.d server application.",
+	"description": "Hello world vibe.d",
 	"copyright": "Copyright © 2014, sudlik",
+	"license": "MIT",
 	"authors": ["sudlik"],
 	"dependencies": {
-		"vibe-d": ">=0.7.17"
+		"vibe-d": ">=0.7.23"
 	},
 	"versions": ["VibeDefaultMain"]
 }

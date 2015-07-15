@@ -1,4 +1,4 @@
-import vibe.d;
+import vibe.web.web: registerWebInterface;
 import vibe.http.router : URLRouter;
 import vibe.http.server : listenHTTP, HTTPServerOption, HTTPServerSettings;
 import controller : Controller;

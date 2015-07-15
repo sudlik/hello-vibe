@@ -11,7 +11,7 @@ Usage
 ------------
 1. `$ git clone git@github.com:sudlik/hello-vibe.git`
 2. `$ cd hello-vibe`
-3. `$ dub run`
+3. `$ dub run -b release-nobounds`
 
 Test
 ------------
